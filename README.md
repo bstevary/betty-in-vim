@@ -1,4 +1,4 @@
-# betty-ale-vim
+# betty-in-vim
 > An extention for Ale which integrate Betty's linter of holberton school
 with vim
 
@@ -6,8 +6,9 @@ with vim
 
 ### Prerequisites
 To run this script you need to   have install 
-   ' Betty linter
-   ' vim-plug		[folow this process to do so] 
+-	[Betty linter][betty]
+-	[vim-plug][vP]
+-	[Asynchronous Lint Engine (Ale)][ALE].	
 ##### 1.Installation of Vim-plug
 
 ###### Unix
@@ -22,7 +23,8 @@ file as suggested [here][auto].
 
 [auto]: https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
 [ALE]: https://github.com/dense-analysis/ale
-[betty]https://github.com/holbertonschool/Betty/wiki
+[betty]: https://github.com/holbertonschool/Betty/wiki
+[vP]: https://github.com/junegunn/vim-plug
 ###### Windows (PowerShell)
 
 ```powershell
@@ -33,12 +35,12 @@ iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
 
 
 
-### edit the file to instal
+### edit the file to install
 ######	1.Copy this and paste to terminal
 ```vim
 vim  ~/.vimrc
 ```
-######	2.Enter the insert mode, paste the following to the file, save and exit
+######	2.Enter the insert mode, paste the following to the file 
 ```edits
 map <F8> :setlocal spell! spelllang=en_gb<CR>
 set tabstop=8 shiftwidth=8
@@ -62,11 +64,13 @@ call plug#begin('~/.vim/plugged')
 	Plug 'bstevary/betty-in-vim'|       "to install the script
 call plug#end()
 ```
-######	3.After you have exited the file paste the folowing to terminal
+######	3save and exit
+
+######	4.After you have exited the file paste the folowing to terminal
 ```test
 vim  ~/v_test.c
 ```
-######	In command mode type
+######	5.In command mode type
 
 ```install
 :PlugInstall
