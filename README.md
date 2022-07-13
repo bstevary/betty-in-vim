@@ -6,8 +6,8 @@ with vim
 
 ### Prerequisites
 To run this script you need to   have install 
-   1 Betty linter
-   2 vim-plug		[folow this process to do so] 
+   ' Betty linter
+   ' vim-plug		[folow this process to do so] 
 ##### 1.Installation of Vim-plug
 
 ###### Unix
@@ -22,7 +22,7 @@ file as suggested [here][auto].
 
 [auto]: https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
 [ALE]: https://github.com/dense-analysis/ale
-[betty]
+[betty]https://github.com/holbertonschool/Betty/wiki
 ###### Windows (PowerShell)
 
 ```powershell
@@ -52,7 +52,9 @@ syntax on
 set undofile
 set undodir=/tmp
 inoremap <C-H> <C-W>
+
 "you can delete above commands but make sure to include this one here are mandatory
+
 let g:ale_linters = {'c':['betty-style', 'betty-doc', 'gcc']} "add betty to ale linters
 "Call Vim-plug
 call plug#begin('~/.vim/plugged')
@@ -69,7 +71,7 @@ vim  ~/v_test.c
 ```install
 :PlugInstall
 ```
-exit and have fun with vim
+###### Exit and have fun with vim
 
 
 
