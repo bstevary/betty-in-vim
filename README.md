@@ -73,7 +73,7 @@ vim  ~/v_test.c
 ######	5.In command mode type
 
 ```install
-:PlugInstall
+PlugInstall
 ```
 ###### Exit and have fun with vim
 
